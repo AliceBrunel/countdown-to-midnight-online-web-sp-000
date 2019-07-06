@@ -1,4 +1,3 @@
-#write your code here
 require 'pry'
 
 def countdown(number)
@@ -14,6 +13,7 @@ def countdown_with_sleep(second)
     puts "#{number} SECOND(S)!"
     number -= 1
     sleep(second)
+    binding.pry
   end
   return "HAPPY NEW YEAR!"
 end
